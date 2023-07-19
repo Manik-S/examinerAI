@@ -2,14 +2,9 @@ package com.hackathon.examinerAI.model;
 
 import java.util.List;
 
-/**
- * This POJO represents request model for REST API <b>TBD</b>
- */
-public class ExaminerRequest {
-
+public class ExaminerRequestWithPDF {
     private long id;
-    private String subject;
-    private List<String> topic;
+    private String filePath;
     private Difficulty difficulty;
     private List<SectionRequest> sectionsInRequest;
 
@@ -21,20 +16,12 @@ public class ExaminerRequest {
         this.id = id;
     }
 
-    public String getSubject() {
-        return subject;
+    public String getFilePath() {
+        return filePath;
     }
 
-    public void setSubject(String subject) {
-        this.subject = subject;
-    }
-
-    public List<String> getTopic() {
-        return topic;
-    }
-
-    public void setTopic(List<String> topic) {
-        this.topic = topic;
+    public void setFilePath(String filePath) {
+        this.filePath = filePath;
     }
 
     public Difficulty getDifficulty() {

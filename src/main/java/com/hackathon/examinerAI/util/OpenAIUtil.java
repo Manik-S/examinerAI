@@ -15,7 +15,11 @@ import static com.hackathon.examinerAI.util.TokenTracker.updateNumbersInFile;
 
 @Component
 @Slf4j
-public class OpenAIUtil {
+public class
+
+
+
+OpenAIUtil {
     @Qualifier("openaiRestTemplate")
     @Autowired
     private RestTemplate restTemplate;

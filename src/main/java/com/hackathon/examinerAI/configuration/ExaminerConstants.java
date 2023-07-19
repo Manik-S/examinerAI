@@ -8,6 +8,7 @@ public class ExaminerConstants {
                     + "\nDont display question type and difficulty anywhere in the paper"
                     + "\nGenerate and display the options for MULTIPLE_CHOICE_QUESTION "
                     + "\nDisplay marks of each section next to section name, and marks for each question to the right of each questions";
+    public static String promptPrefixWithText="###TASK### Using the following text as source, generate a question paper having total marks= ";
     public static int varN = 1;
     public static double varTemperature = 0.3;
 }
