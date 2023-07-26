@@ -3,10 +3,10 @@ package com.hackathon.examinerAI.model;
 public class SectionRequest {
   private String sectionName;
   private QuestionType questionType;
-  private long numberOfQuestions;
-  private double marks;
+  private int numberOfQuestions;
+  private int marks;
 
-  private double sectionMarks;
+  private int sectionMarks;
 
   public String getSectionName() {
     return sectionName;
@@ -28,24 +28,24 @@ public class SectionRequest {
     return numberOfQuestions;
   }
 
-  public void setNumberOfQuestions(long numberOfQuestions) {
+  public void setNumberOfQuestions(int numberOfQuestions) {
     this.numberOfQuestions = numberOfQuestions;
   }
 
-  public double getMarks() {
+  public int getMarks() {
     return marks;
   }
 
-  public void setMarks(double marks) {
+  public void setMarks(int marks) {
     this.marks = marks;
   }
 
-  public double getSectionMarks() {
+  public int getSectionMarks() {
     this.sectionMarks = marks * numberOfQuestions;
     return sectionMarks;
   }
 
-  public void setSectionMarks(double sectionMarks) {
+  public void setSectionMarks(int sectionMarks) {
     this.sectionMarks = sectionMarks;
   }
 }

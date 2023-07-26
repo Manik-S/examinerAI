@@ -78,12 +78,13 @@ public class ExaminerServiceImp implements ExaminerService {
 
     private String generatePrompt(ExaminerRequestWithText examinerRequestWithText) {
         Double ttl = 0.0;
-        String prompt = "\n###TEXT### " + examinerRequestWithText.getText()
-                +"###MANDATORY CONDITION### Like a comprehension the questions should be from the text"
-                + "\n###CONTEXT### The question paper must have the following details"
+        String prompt = "\nTEXT " + examinerRequestWithText.getText()
+                +"MANDATORY CONDITION Like a comprehension the questions should be from the text"
+                + "\nCONTEXT The question paper must have the following details"
                 +"\nSubject based on the text provided "
                 +"\nTopics which are provided in the text"
-                + "\n###DIFFICULTY### " + examinerRequestWithText.getDifficulty()
+                +"\nTotal marks"
+                + "\nDIFFICULTY " + examinerRequestWithText.getDifficulty()
                 + "\nThis question paper must have "
                 + examinerRequestWithText.getSectionsInRequest().size()
                 + " sections with following details";

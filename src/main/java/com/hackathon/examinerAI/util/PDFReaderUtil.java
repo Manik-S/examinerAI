@@ -13,7 +13,7 @@ public class PDFReaderUtil {
         try {
             document = PDDocument.load(file);
             PDFTextStripper stripper = new PDFTextStripper();
-            return stripper.getText(document);
+            return stripper.getText(document).strip();
         } finally {
             if (document != null) {
                 document.close();
